@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Angel Velasquez",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp", "top": -31.52, "left": -43.2, "attrs": {} },
+    { "type": "chip-gps-neo6m", "id": "neo6m", "top": 97.02, "left": 177.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "neo6m:VCC", "esp:3V3", "red", [ "h-76.8", "v-9.6" ] ],
+    [ "neo6m:GND", "esp:GND.1", "black", [ "h-57.6", "v41.12" ] ],
+    [ "neo6m:TX", "esp:RX2", "purple", [ "h-96", "v-38.4" ] ],
+    [ "esp:TX2", "neo6m:RX", "orange", [ "h47.51", "v57.6" ] ]
+  ],
+  "dependencies": {}
+}

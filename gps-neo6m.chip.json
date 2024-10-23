@@ -1,0 +1,15 @@
+{
+  "name": "gps-neo6m",
+  "author": "Angel Velasquez",
+  "pins": [
+    "GND",
+    "TX",
+    "RX",
+    "VCC",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "controls": []
+}
